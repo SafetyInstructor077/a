@@ -12,6 +12,12 @@
 	margin: 0;
 	box-sizing: border-box;
 	font-family: "Fira sans", sans-serif;
+	text-decoration: none;
+}
+
+a{
+	color: var(--grey);
+	cursor: pointer;
 }
 
 body {
@@ -19,7 +25,11 @@ body {
 	flex-direction: column;
 	min-height: 100vh;
 	color: #FFF;
-	background-color: var(--dark);
+	background-color: transparent;
+	background-image: url("https://images.pexels.com/photos/459402/pexels-photo-459402.jpeg?cs=srgb&dl=pexels-pixabay-459402.jpg&fm=jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	backdrop-filter: blur(5px);
 }
 
 header {
@@ -94,8 +104,19 @@ main {
 .task-list h2 {
 	font-size: 1.5rem;
 	font-weight: 300;
-	color: var(--grey);
+	color: var(--pink);
 	margin-bottom: 1rem;
+}
+
+#tasks{
+	display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.container{
+	margin: 0 25px ;
+	max-width: 100vh;
 }
 
 #tasks .task {
