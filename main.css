@@ -15,6 +15,10 @@
 	text-decoration: none;
 }
 
+.fav > *{
+	color: var(--purple);
+}
+
 a{
 	color: var(--grey);
 	cursor: pointer;
